@@ -1,0 +1,60 @@
+<!-- generate_excel.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Generate Excel</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand mx-3 text-light" href="#" style="font-size:26px">Ruparel Attendance System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mx-5" id="navbarNavAltMarkup">
+          <div class="navbar-nav mx-5" style="font-size:20px">
+            <a class="nav-item nav-link m-2 text-light" href="{% url 'add_face' %}">Add Student</a>
+            <a class="nav-item nav-link m-2 text-light" href="{% url 'check' %}">Check Student</a>
+            <a class="nav-item nav-link m-2 text-light" href="{% url 'generate_excel' %}">Generate excel</a>
+            <a class="nav-item nav-link m-2 text-light" href="{% url 'conv_pdf' %}">Generated Excel file</a>
+            
+          </div>
+        </div>
+      </nav>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="text-center">Generate Excel</h2>
+                    </div>
+                    <div class="card-body">
+                        <form method="post" action="{% url 'generate_excel' %}">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                {{ form.stream.label_tag }}
+                                {{ form.stream }}
+                            </div>
+                            <div class="form-group">
+                                {{ form.std.label_tag }}
+                                {{ form.std }}
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block">Generate Excel</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

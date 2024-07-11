@@ -5,3 +5,10 @@ This attendance system project which is create in python Django. This project ma
 ## How to use
 
 In this project, first, add students. After adding students, generate an Excel file. The Excel file will be generated for the full month. Initially, the Excel file will mark students as absent for all 31 days. If you mark a student as present, they will be marked as present for that day. Clicking the absent button will send an absence message via WhatsApp.
+
+## Screenshot
+
+![image](https://github.com/Itstudentjnd/Attendance-System/assets/87485552/09d9bcb1-324f-4695-a1ec-4e70a43c1712)
+![image](https://github.com/Itstudentjnd/Attendance-System/assets/87485552/7204cbc3-7c60-4e75-8b32-8660bd505db5)
+![image](https://github.com/Itstudentjnd/Attendance-System/assets/87485552/1e463d99-1290-4239-b274-e8dcb00425e2)
+![image](https://github.com/Itstudentjnd/Attendance-System/assets/87485552/05c500f3-91c1-42a2-ac86-582d9dff8a3a)

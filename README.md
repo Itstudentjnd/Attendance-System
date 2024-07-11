@@ -19,3 +19,8 @@ In this project, first, add students. After adding students, generate an Excel f
 ![image](https://github.com/Itstudentjnd/Attendance-System/assets/87485552/1e463d99-1290-4239-b274-e8dcb00425e2)
 4. Generated excel file
 ![image](https://github.com/Itstudentjnd/Attendance-System/assets/87485552/05c500f3-91c1-42a2-ac86-582d9dff8a3a)
+
+## Video 
+
+![image](https://github.com/Itstudentjnd/Attendance-System/assets/87485552/cff2d2ba-8b4e-4ae7-9dd3-1abc6640815a)
+

@@ -22,7 +22,7 @@ In this project, first, add students. After adding students, generate an Excel f
 
 ## Contact 
 
-If you have any questions or need help, please contact me at [saharsh5603@gmail.com ] or open an issue on GitHub.
+If you have any questions or need help, please contact me at saharsh05062003@gmail.com or open an issue on GitHub.
 
 
 
